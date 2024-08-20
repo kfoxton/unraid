@@ -24,8 +24,8 @@
   <Requires/>
   <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="immich_url" Target="KIOSK_IMMICH_URL" Default="" Mode="" Description="The URL to the Immich Server" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.210:8080</Config>
-  <Config Name="immich_api_key" Target="KIOSK_IMMICH_API_KEY" Default="" Mode="" Description="The API for your Immich server." Type="Variable" Display="always" Required="false" Mask="false">bhapbZgPadKQAZTFspYC5kSWl2kdmZ75JxhC4tZhLM</Config>
+  <Config Name="immich_url" Target="KIOSK_IMMICH_URL" Default="" Mode="" Description="The URL to the Immich Server" Type="Variable" Display="always" Required="false" Mask="false">http://1.2.3.4:8080</Config>
+  <Config Name="immich_api_key" Target="KIOSK_IMMICH_API_KEY" Default="" Mode="" Description="The API for your Immich server." Type="Variable" Display="always" Required="false" Mask="false"><codehere></Config>
   <Config Name="disable_ui" Target="KIOSK_DISABLE_UI" Default="FALSE" Mode="" Description="A shortcut to set show_time, show_date, show_image_time and image_date_format to false." Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
   <Config Name="show_time" Target="KIOSK_SHOW_TIME" Default="TRUE" Mode="" Description="Display clock." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
   <Config Name="time_format" Target="KIOSK_TIME_FORMAT" Default="12" Mode="" Description="Display clock time in either 12 hour or 24 hour format. Can either be 12 or 24." Type="Variable" Display="always" Required="false" Mask="false">12</Config>
