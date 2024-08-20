@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>immich-kiosk</Name>
+  <Repository>damongolding/immich-kiosk</Repository>
+  <Registry>https://hub.docker.com/r/damongolding/immich-kiosk/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/damongolding/immich-kiosk/</Support>
+  <Project/>
+  <Overview>A kiosk for your Immich images&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/damongolding/immich-kiosk/main/assets/logo.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1724158663</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="immich_url" Target="KIOSK_IMMICH_URL" Default="" Mode="" Description="The URL to the Immich Server" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.210:8080</Config>
+  <Config Name="immich_api_key" Target="KIOSK_IMMICH_API_KEY" Default="" Mode="" Description="The API for your Immich server." Type="Variable" Display="always" Required="false" Mask="false">bhapbZgPadKQAZTFspYC5kSWl2kdmZ75JxhC4tZhLM</Config>
+  <Config Name="disable_ui" Target="KIOSK_DISABLE_UI" Default="FALSE" Mode="" Description="A shortcut to set show_time, show_date, show_image_time and image_date_format to false." Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="show_time" Target="KIOSK_SHOW_TIME" Default="TRUE" Mode="" Description="Display clock." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="time_format" Target="KIOSK_TIME_FORMAT" Default="12" Mode="" Description="Display clock time in either 12 hour or 24 hour format. Can either be 12 or 24." Type="Variable" Display="always" Required="false" Mask="false">12</Config>
+  <Config Name="show_date" Target="KIOSK_SHOW_DATE" Default="TRUE" Mode="" Description="Display the date." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="date_format" Target="KIOSK_DATE_FORMAT" Default="02/01/2006" Mode="" Description="The format of the date. default is day/month/year. Any GO date string is valid." Type="Variable" Display="always" Required="false" Mask="false">02/01/2006</Config>
+  <Config Name="refresh" Target="KIOSK_REFRESH" Default="60" Mode="" Description="The amount in seconds a image will be displayed for." Type="Variable" Display="always" Required="false" Mask="false">60</Config>
+  <Config Name="album" Target="KIOSK_ALBUM" Default="" Mode="" Description="The ID(s) of a specific album or albums you want to display. See FAQ: How do I set multiple albums? to see how to impliment this." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="person" Target="KIOSK_PERSON" Default="" Mode="" Description="The ID(s) of a specific person or people you want to display. See FAQ: How do I set multiple people? to see how to impliment this." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="image_fit" Target="KIOSK_IMAGE_FIT" Default="CONTAIN" Mode="" Description="How your image will fit on the screen. Default is contain. See Image fit for more info." Type="Variable" Display="always" Required="false" Mask="false">CONTAIN</Config>
+  <Config Name="background_blur" Target="KIOSK_BACKGROUND_BLUR" Default="TRUE" Mode="" Description="Display a blurred version of the image as a background." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="transition" Target="KIOSK_TRANSITION" Default="CROSS-FADE" Mode="" Description="Which transition to use when changing images." Type="Variable" Display="always" Required="false" Mask="false">CROSS-FADE</Config>
+  <Config Name="show_progress" Target="KIOSK_SHOW_PROGRESS" Default="TRUE" Mode="" Description="Display a progress bar for when image will refresh." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="show_image_time" Target="KIOSK_SHOW_IMAGE_TIME" Default="TRUE" Mode="" Description="Display image time from METADATA (if available)." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="image_time_format" Target="KIOSK_IMAGE_TIME_FORMAT" Default="12" Mode="" Description="Display image time in either 12 hour or 24 hour format. Can either be 12 or 24." Type="Variable" Display="always" Required="false" Mask="false">12</Config>
+  <Config Name="show_image_date" Target="KIOSK_SHOW_IMAGE_DATE" Default="TRUE" Mode="" Description="Display the image date from METADATA (if available)." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="image_date_format" Target="KIOSK_IMAGE_DATE_FORMAT" Default="02/01/2006" Mode="" Description="The format of the image date. default is day/month/year. Any GO date string is valid." Type="Variable" Display="always" Required="false" Mask="false">02/01/2006</Config>
+  <Config Name="password" Target="KIOSK_PASSWORD" Default="" Mode="" Description="Please see FAQs for more info. If set, requests MUST contain the password in the GET parameters e.g. http://192.168.0.123:3000?password=PASSWORD." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="cache" Target="KIOSK_CACHE" Default="TRUE" Mode="" Description="Cache selective Immich api calls to reduce unnecessary calls. Default is true." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+</Container>
