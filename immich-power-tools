@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>immich-power-tools</Name>
+  <Repository>ghcr.io/varun-raj/immich-power-tools:latest</Repository>
+  <Registry>ghcr.io/varun-raj/immich-power-tools:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>https://github.com/varun-raj/immich-power-tools&#xD;
+&#xD;
+A unofficial immich client to provide better tools to organize and manage your immich account. Building it to speed up your workflows in Immich to organize your people and albums.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8001]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1724351152</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="IMMICH_URL" Target="IMMICH_URL" Default="" Mode="" Description="This should be the immich url which is accessible in your browser" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.210:8080</Config>
+  <Config Name="IMMICH_API_KEY" Target="IMMICH_API_KEY" Default="" Mode="" Description="your_immich_api_key" Type="Variable" Display="always" Required="true" Mask="false">API Code here</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="postgresql://user:password@databaseIP:Port;" Type="Variable" Display="always" Required="true" Mask="false">postgresql://user:password@databaseIP:Port</Config>
+  <Config Name="WebUI" Target="3000" Default="8001" Mode="tcp" Description="Web port" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
+</Container>
